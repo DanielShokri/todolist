@@ -1,0 +1,19 @@
+{
+  "name": "todoApp-JS",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "postcss css/tailwind.css -o public/build/tailwind.css",
+    "dev": "parcel public/build/index.html"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "autoprefixer": "^9.8.6",
+    "postcss-cli": "^7.1.1",
+    "tailwindcss": "^1.7.6",
+    "tippy.js": "^6.2.6"
+  }
+}

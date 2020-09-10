@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/x-icon" href="/favicon.26242483.ico">
+    <link rel="stylesheet" href="/tailwind.981b46d3.css">
+    <link rel="stylesheet" href="/main.af46ece4.css">
+    <title>TODO LIST</title>
+<script src="/tailwind.981b46d3.js"></script><script src="/main.af46ece4.js"></script><link rel="stylesheet" href="/build.e31bb0bc.css"></head>
+
+<body>
+    <main class="flex items-center justify-center">
+        <div class="container flex flex-col items-center">
+            <div class="hero rounded-md sm:rounded-t-md sm:w-10/12 w-11/12 flex justify-center flex-wrap absolute ">
+
+                <img class="p-4 mb-6" src="/logo.cecc779a.png" alt="todo-logo">
+                <div class="md:flex md:items-center mb-6 sm:w-4/7 w-11/12 justify-center">
+                    <div>
+                    </div>
+                    <form class="md:w-5/6">
+                        <div class="flex relative">
+                            <input class="bg-gray-200 todo-input appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-purple-500" id="inline-full-name" type="text" placeholder="What's on your mind today?">
+                            <button class="shadow add-todo right-0 absolute bg-yellow-500 hover:bg-yellow-400 focus:shadow-outline focus:outline-none text-white font-bold py-2 px-4 rounded" type="submit">
+                                ADD
+                            </button>
+                        </div>
+                </form></div>
+            </div>
+
+            <div class="todo-box relative overflow-auto w-11/12 sm:w-10/12 h-64 p-3 bg-gray-200 shadow-md rounded-md">
+                
+            </div>
+            
+            
+        </div>
+        <div class="alert-footer w-full fixed bottom-0">
+            <input type="checkbox" class="hidden" id="footeralert">
+
+            <div class="flex items-center justify-center w-full p-2 bg-blue-500 shadow text-white">
+                Made with ❤ - <a target="blank" href="https://www.github.com/danielshokri">&nbsp; <span id="daniel-tooltip">Daniel Shokri</span></a>
+
+                <label class="close cursor-pointer" title="close" for="footeralert">
+
+                </label>
+            </div>
+        </div>
+        <div class="alert-toast invisible fixed bottom-0 right-0 m-8 w-3 md:w-full max-w-sm">
+            <input type="checkbox" class="hidden" id="footertoast">
+
+            <label class="close cursor-pointer flex items-start justify-between w-full p-2 bg-red-500 h-7 rounded shadow-lg text-white" title="close" for="footertoast">
+                Cant left blank.
+
+                <svg class="fill-current text-white" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18">
+                    <path d="M14.53 4.53l-1.06-1.06L9 7.94 4.53 3.47 3.47 4.53 7.94 9l-4.47 4.47 1.06 1.06L9 10.06l4.47 4.47 1.06-1.06L10.06 9z">
+                    </path>
+                </svg>
+            </label>
+        </div>
+    </main>
+
+    <script src="/build.e31bb0bc.js"></script>
+</body>
+
+</html>
