@@ -1,4 +1,4 @@
-<h1 align="center"> DELICIOUS RECIPE SITE :meat_on_bone:</h1> <br>
+<h1 align="center"> TODO list app 💪🏻</h1> <br>
 <p align="center">
   <a href="https://danielshokri.github.io/todolist/">
     <img src="http://g.recordit.co/aRSC0hbGXY.gif" width="700px">
