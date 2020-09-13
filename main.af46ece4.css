@@ -79,6 +79,10 @@ input[type="checkbox"] {
   display: inline;
 }
 
+.hero-img {
+  background-image: linear-gradient(to top, #e6e9f0 0%, #eef1f5 100%);
+}
+
 /* Add this below all the other styles */
 
 .empty-state {
@@ -105,6 +109,60 @@ input[type="checkbox"] {
 
 .todo-list:empty + .empty-state {
   display: flex;
+}
+
+.alert-toast {
+  position: absolute;
+  top: 0;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  height: 40px;
+  visibility: hidden;
+  cursor: pointer;
+  opacity: 0;
+  width: 30%;
+}
+
+.alert-toast.show {
+  visibility: visible;
+  -webkit-animation: fadeInOut 3s;
+          animation: fadeInOut 3s;
+}
+
+@-webkit-keyframes fadeInOut {
+  5%,
+  95% {
+    opacity: 1;
+    top: 60px;
+  }
+
+  15%,
+  85% {
+    opacity: 1;
+    top: 45px;
+  }
+}
+
+@keyframes fadeInOut {
+  5%,
+  95% {
+    opacity: 1;
+    top: 60px;
+  }
+
+  15%,
+  85% {
+    opacity: 1;
+    top: 45px;
+  }
+}
+
+/* Media queries */
+
+@media screen and (min-width: 355px) and (max-width: 414px) {
+  .alert-toast {
+    width: 85%;
+  }
 }
 
 

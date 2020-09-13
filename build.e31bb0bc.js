@@ -125,6 +125,7 @@ function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { va
 function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
 
 var todoItems = [];
+var alertToastEl = document.querySelector(".alert-toast");
 
 function renderTodo(todo) {
   localStorage.setItem("todoItems", JSON.stringify(todoItems));
@@ -193,7 +194,15 @@ form.addEventListener("submit", function (event) {
     addTodo(text);
     input.value = "";
     input.focus();
+  } else {
+    alertToastEl.classList.add("show");
+    setTimeout(function () {
+      alertToastEl.classList.remove("show");
+    }, 3500);
   }
+});
+alertToastEl.addEventListener("click", function () {
+  alertToastEl.classList.remove("show");
 });
 var list = document.querySelector(".js-todo-list");
 list.addEventListener("click", function (event) {
@@ -245,7 +254,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "7787" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "2006" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
